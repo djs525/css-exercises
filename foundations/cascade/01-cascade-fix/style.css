@@ -1,42 +1,49 @@
+*{
+  outline: 2px solid red;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.para,
-.small-para {
+/* should work fine */
+.para{
+  font-size: 22px;
+}
+
+/* should work fine */
+.para,.small-para{
   color: hsl(0, 0%, 0%);
   font-weight: 800;
 }
 
+/* should work fine */
 .small-para {
   font-size: 14px;
-  font-weight: 800;
 }
 
-.para {
-  font-size: 22px;
-}
-
-.confirm {
-  background: green;
-  color: white;
-  font-weight: bold;
-} 
-
+/* works fine */
 .button {
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
   font-size: 20px;
 }
 
+/* works fine */
+.confirm {
+  background: green;
+  color: white;
+  font-weight: bold;
+} 
+
+.text {
+  color: rgb(0, 0, 0);
+  font-size: 22px;
+  font-weight: 100;
+}
+
 .child {
   color: rgb(0, 0, 0);
   font-weight: 800;
   font-size: 14px;
-}
-
-div.text {
-  color: rgb(0, 0, 0);
-  font-size: 22px;
-  font-weight: 100;
 }
